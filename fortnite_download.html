@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fortnite - Game Download</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 1rem;
+        }
+        
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+            color: #2a5298;
+        }
+        
+        .screenshots img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .download-links a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .comments {
+            margin-top: 3rem;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+        }
+        
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #2a5298;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Fortnite</h1>
+        <p>Battle Royale | Multiplayer | Survival</p>
+    </header>
+
+    <section style="text-align:center; margin-top: 2rem;">
+        <img src="Fortnite-title.jpg" alt="FORTNITE Title" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+    </section>
+
+    <section>
+        <h2>Game Overview</h2>
+        <p><strong>Type of game:</strong> Battle Royale, Survival, Multiplayer</p>
+        <p><strong>PC Release Date:</strong> July 25, 2017</p>
+        <p><strong>Developer/Publishers:</strong> Epic Games</p>
+        <p>Fortnite is an Shooting video game. Developed and published by Epic Games. It was released on July 25, 2017 for Windows. game is set after a fluke storm appears across Earth, causing 98% of the population to disappear, and the survivors to be
+            attacked by zombie-like “husks”. The players take the role of commanders of home base shelters, collecting resources, saving survivors, and defending equipment that help to either collect data on the storm or to push back the storm. From missions,
+            players are awarded a number of in-game items, which include hero characters, weapon and trap schematics, and survivors, all of which can be leveled up through gained experience to improve their attributes.</p>
+    </section>
+
+    <section>
+        <h2>Minimum System Requirements</h2>
+        <ul>
+            <li>OS: Windows 7/8/10 64-bit</li>
+            <li>Processor: Core i3 2.4 GHz</li>
+            <li>RAM: 4 GB</li>
+            <li>Graphics Card: Intel HD 4000</li>
+            <li>Disk Space: 20 GB available</li>
+            <li>DirectX: Version 11</li>
+            <li>Internet: Broadband connection</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to Install</h2>
+        <p>Watch Installation Video: <a href="https://www.youtube.com/watch?v=c3DP9oS0UC8" target="_blank">Click here</a></p>
+    </section>
+
+    <section class="screenshots">
+        <h2>Screenshots</h2>
+        <img src="Fortnite-screenshoot-1.jpg" alt="Fortnite screenshot">
+        <img src="Fortnite-screenshoot-2.jpg" alt="Fortnite screenshot">
+        <img src="Fortnite-screenshoot-3.jpg" alt="Fortnite screenshot">
+    </section>
+
+    <section class="download-links">
+        <h2>Download Fortnite</h2>
+        <a href="https://github.com/RareDevs/Rare/releases/tag/1.11.3" target="_blank">Download Now</a>
+    </section>
+
+    <p>Please share with your friends and help us to make best gaming community!</p>
+
+    <section class="comments">
+        <h2>Leave a Comment</h2>
+        <textarea id="commentText" placeholder="Write your comment here..."></textarea><br>
+        <button onclick="postComment()">Submit</button>
+        <div id="commentList"></div>
+    </section>
+
+    <script>
+        function postComment() {
+            var comment = document.getElementById("commentText").value;
+            if (comment.trim() !== "") {
+                var commentDiv = document.createElement("div");
+                commentDiv.textContent = comment;
+                commentDiv.style.margin = "10px 0";
+                commentDiv.style.padding = "10px";
+                commentDiv.style.backgroundColor = "#f0f0f0";
+                commentDiv.style.borderRadius = "5px";
+                document.getElementById("commentList").appendChild(commentDiv);
+                document.getElementById("commentText").value = "";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

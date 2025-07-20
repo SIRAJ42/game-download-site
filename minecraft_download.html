@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft - Game Download</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 1rem;
+        }
+        
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+            color: #2a5298;
+        }
+        
+        .screenshots img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .download-links a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .comments {
+            margin-top: 3rem;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+        }
+        
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #2a5298;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Minecraft</h1>
+        <p>Sandbox | Survival | Creative</p>
+    </header>
+
+    <section style="text-align:center; margin-top: 2rem;">
+        <img src="Minecraft-title.jpg" alt="Minecraft" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+    </section>
+
+    <section>
+        <h2>Game Overview</h2>
+        <p><strong>Type of game:</strong> Sandbox, Survival, Creative</p>
+        <p><strong>Initial Release:</strong> November 18, 2011</p>
+        <p><strong>Developer/Publishers:</strong> Mojang Studios</p>
+        <p>Minecraft is a sandbox game that allows players to explore infinite worlds and build everything from the simplest homes to the grandest castles. Play in creative mode with unlimited resources or mine deep into the world in survival mode, crafting
+            weapons and armor to fend off dangerous mobs.</p>
+    </section>
+
+    <section>
+        <h2>Minimum System Requirements</h2>
+        <ul>
+            <li>OS: Windows 7 or later</li>
+            <li>Processor: Intel Core i3 or equivalent</li>
+            <li>RAM: 4 GB</li>
+            <li>Graphics: Intel HD Graphics 4000 or better</li>
+            <li>Storage: 2 GB available space</li>
+            <li>Java Required</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to Install</h2>
+        <p>Watch Installation Videos:</p>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=eNS3GMQo5Eg" target="_blank">Installation Video 1</a></li>
+            <li><a href="https://www.youtube.com/watch?v=srweAz6OdKc" target="_blank">Installation Video 2</a></li>
+        </ul>
+    </section>
+
+    <section class="screenshots">
+        <h2>Screenshots</h2>
+        <img src="Minecraft-screenshot-2.jpg" alt="Minecraft screenshot">
+        <img src="Minecraft-screenshot-1.jpg" alt="Minecraft screenshot">
+        <img src="Minecraft-screenshot-3.jpg" alt="Minecraft screenshot">
+    </section>
+
+    <section class="download-links">
+        <h2>Download Minecraft</h2>
+        <a href="https://tlauncher.org/" target="_blank">Download TLauncher</a>
+        <a href="https://www.filehorse.com/download-java-runtime-64/download/" target="_blank">Download Java</a>
+        <a href="https://www.filehorse.com/download-java-development-kit-64/download/" target="_blank">Download JDK</a>
+    </section>
+
+    <p>Please share with your friends and help us to make best gaming community!</p>
+
+    <section class="comments">
+        <h2>Leave a Comment</h2>
+        <textarea id="commentText" placeholder="Write your comment here..."></textarea><br>
+        <button onclick="postComment()">Submit</button>
+        <div id="commentList"></div>
+    </section>
+
+    <script>
+        function postComment() {
+            var comment = document.getElementById("commentText").value;
+            if (comment.trim() !== "") {
+                var commentDiv = document.createElement("div");
+                commentDiv.textContent = comment;
+                commentDiv.style.margin = "10px 0";
+                commentDiv.style.padding = "10px";
+                commentDiv.style.backgroundColor = "#f0f0f0";
+                commentDiv.style.borderRadius = "5px";
+                document.getElementById("commentList").appendChild(commentDiv);
+                document.getElementById("commentText").value = "";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
